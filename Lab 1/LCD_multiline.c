@@ -53,21 +53,21 @@ void main()
     while( BusyXLCD() );
 
 	// print "Line 2" to 0x40
-    SetDDRamAddr(0x00);
+    SetDDRamAddr(0x40);
     while( BusyXLCD() );
-    putrsXLCD("Line 1");
+    putrsXLCD("Line 2");
     while( BusyXLCD() );
 
 	// print "Line 3" to 0x10
-    SetDDRamAddr(0x00);
+    SetDDRamAddr(0x10);
     while( BusyXLCD() );
-    putrsXLCD("Line 1");
+    putrsXLCD("Line 3");
     while( BusyXLCD() );
 
 	// print "Line 4" to 0x50
-    SetDDRamAddr(0x00);
+    SetDDRamAddr(0x50);
     while( BusyXLCD() );
-    putrsXLCD("Line 1");
+    putrsXLCD("Line 4");
     while( BusyXLCD() );
        
     Sleep();
